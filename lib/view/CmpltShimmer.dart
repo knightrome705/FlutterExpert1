@@ -2,6 +2,7 @@ import 'dart:async';
 
 import 'package:flutter/material.dart';
 import 'package:shimmer/shimmer.dart';
+import 'package:untitled4/view/ListVarient.dart';
 import 'package:untitled4/view/TheToggleButton.dart';
 class CmpltShimmer extends StatefulWidget {
   const CmpltShimmer({super.key});
@@ -16,7 +17,7 @@ class _CmpltShimmerState extends State<CmpltShimmer> {
     // TODO: implement initState
     super.initState();
     Timer(Duration(seconds: 3),(){
-      Navigator.of(context).pushReplacement(MaterialPageRoute(builder: (context) => Tb(),));
+      Navigator.of(context).pushReplacement(MaterialPageRoute(builder: (context) => ALTile(),));
     });
   }
   Widget build(BuildContext context) {

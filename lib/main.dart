@@ -2,8 +2,11 @@ import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import 'package:untitled4/provider/Demo.dart';
 import 'package:untitled4/view/CmpltShimmer.dart';
+import 'package:untitled4/view/ListVarient.dart';
 import 'package:untitled4/view/SplashScreen.dart';
+import 'package:untitled4/view/TheDrawer.dart';
 import 'package:untitled4/view/TheShimmer.dart';
+import 'package:untitled4/view/Thetransition.dart';
 import 'package:untitled4/view/page1.dart';
 import 'package:untitled4/view/page2.dart';
 
@@ -26,7 +29,7 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       title: 'Flutter Demo',
       theme: ThemeData.dark(),
-      home:  SplashScreen(),
+      home:  TheDrawer(),
       routes: {
         '/page2':(context)=>Page2(),
         '/page1':(context)=>Page1()
