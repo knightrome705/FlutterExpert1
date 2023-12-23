@@ -8,10 +8,12 @@ class Tb extends StatefulWidget {
 
 class _TbState extends State<Tb> {
   List<bool> isSelected=[false,false,false];
+  List<bool> isSelected1=[false,false,false];
   bool switched=false;
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Colors.white,
       appBar: AppBar(
         backgroundColor: Colors.blue,
         title: Text("Toggle"),
@@ -32,14 +34,17 @@ class _TbState extends State<Tb> {
               });
             },
             ),
+            SizedBox(
+              height: 100,
+            ),
             ToggleButtons(children: [
-              Icon(Icons.add),
-              Icon(Icons.ac_unit),
-              Icon(Icons.abc_outlined)
-            ], isSelected: isSelected,
+              Icon(Icons.add,color: Colors.black,),
+              Icon(Icons.ac_unit,color: Colors.black,),
+              Icon(Icons.abc_outlined,color: Colors.black,)
+            ], isSelected: isSelected1,
               onPressed: (value){
               setState(() {
-                isSelected[value]=!isSelected[value];
+                isSelected1[value]=!isSelected1[value];
               });
               },
               fillColor: Colors.blue,

@@ -1,13 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import 'package:untitled4/provider/Demo.dart';
-import 'package:untitled4/view/Anime.dart';
-import 'package:untitled4/view/Crossfade.dart';
-import 'package:untitled4/view/Sum2.dart';
-import 'package:untitled4/view/ThePageView.dart';
-import 'package:untitled4/view/TheToggleButton.dart';
+import 'package:untitled4/view/CmpltShimmer.dart';
+import 'package:untitled4/view/SplashScreen.dart';
+import 'package:untitled4/view/TheShimmer.dart';
 import 'package:untitled4/view/page1.dart';
-import 'package:untitled4/view/slidebarFlutter.dart';
+import 'package:untitled4/view/page2.dart';
+
 
 void main() {
   runApp(MultiProvider(
@@ -27,7 +26,11 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       title: 'Flutter Demo',
       theme: ThemeData.dark(),
-      home:  Cf(),
+      home:  SplashScreen(),
+      routes: {
+        '/page2':(context)=>Page2(),
+        '/page1':(context)=>Page1()
+      },
     );
   }
 }

@@ -23,7 +23,7 @@ class _Page1State extends State<Page1> {
           children: [
             InkWell(
              onTap: (){
-               Navigator.of(context).push(MaterialPageRoute(builder: (context) => Page2(),));
+               Navigator.of(context).pushNamed('/page2');
              },
               child: const Hero(
                   tag: 'tag1',
